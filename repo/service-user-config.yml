@@ -1,7 +1,16 @@
 spring:
   application:
     name: okayokya-cloud-service-user
-
+  redis:
+   database: 0
+   host: 92.168.0.24
+   port: 6379
+   password:
+   pool.max-active: 200
+   pool.max-wait: -1
+   pool.max-idle: 10
+   pool.min-idle: 0
+   timeout: 1000
 server:
   port: 8762
 
