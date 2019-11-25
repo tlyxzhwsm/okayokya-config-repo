@@ -9,3 +9,9 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+druid:
+  datasource:
+    url: mysql://127.0.0.1:3306/okayokya_user?autoReconnect=true&useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+    driverClassName: com.mysql.jdbc.Driver
