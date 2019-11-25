@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: okayokya-cloud-zuul-api-gateway
+
+server:
+  port: 8769
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+zuul:
+  routes:
+    api-user:
+      path: /api/user/**
+      serviceId: okayokya-cloud-service-user
