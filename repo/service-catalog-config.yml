@@ -22,7 +22,7 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 druid:
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/okayokya_user?autoReconnect=true&useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://127.0.0.1:3306/okayokya_catalog?autoReconnect=true&useUnicode=true&characterEncoding=utf8
     username: root
     password: root
     driverClassName: com.mysql.jdbc.Driver
