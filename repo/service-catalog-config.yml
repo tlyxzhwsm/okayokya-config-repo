@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: okayokya-cloud-service-catalog
+  redis:
+    port: 6379
+    database: 0
+    host: 127.0.0.1
+    password:
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1ms
+        max-idle: 8
+        min-idle: 0
+    timeout: 5000ms
+server:
+  port: 8862
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+druid:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/okayokya_user?autoReconnect=true&useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+    driverClassName: com.mysql.jdbc.Driver
